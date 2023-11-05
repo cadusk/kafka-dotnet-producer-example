@@ -1,0 +1,9 @@
+{
+ "namespace": "KafkaUserProducerExample.Models",
+ "type": "record",
+ "name": "User",
+ "fields": [
+     {"name": "Name", "type": "string"},
+     {"name": "Age",  "type": "int"}
+ ]
+}

@@ -1,0 +1,12 @@
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build-env
+WORKDIR /project
+
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt update && \
+    apt install -y jq && \
+    rm -rf /var/lib/apt/lists/*
+
+RUN dotnet tool install --global Apache.Avro.Tools
+ENV PATH="/root/.dotnet/tools:${PATH}"
+
+ENTRYPOINT ["/bin/bash"]
