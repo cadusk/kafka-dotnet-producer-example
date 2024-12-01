@@ -48,3 +48,7 @@ Produced to topic: user-create, Partition: [0], Offset: 1
 And all this simply means that 2 messages with user data were sent to `user-create` topic by the `make producer.run` command and `make consumer.run` was able to read them from the other end of the topic.
 
 There are additional steps for all this to work going on under the hood that are detailed in the documentation.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
